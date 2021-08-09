@@ -25,6 +25,7 @@ def forward_to_chat(update, context):
         'from': {'id': 49820636, 'first_name': 'Daniil', 'is_bot': False, 'last_name': 'Okhlopkov', 'username': 'danokhlopkov', 'language_code': 'en'}
     }"""
     update.message.forward(chat_id=TELEGRAM_SUPPORT_CHAT_ID)
+    update.message.copy(chat_id=TELEGRAM_SUPPORT_CHAT_ID)
 
 
 def forward_to_user(update, context):
